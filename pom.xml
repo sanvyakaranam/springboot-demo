@@ -67,5 +67,19 @@
 			</plugin>
 		</plugins>
 	</build>
+	
+	<distributionManagement>
+		<repository>
+			<id>nexus</id>
+      			<name>releases</name>
+      			<url>http://172.16.2.234:8081/repository/api-releases/</url>
+    		</repository>
+    		<snapshotRepository>
+      			<uniqueVersion>true</uniqueVersion>
+      			<id>nexus</id>
+      			<name>snapshots</name>
+      			<url>http://172.16.2.234:8081/repository/api-snapshots/</url>
+     		</snapshotRepository>
+ 	</distributionManagement>
 
 </project>
